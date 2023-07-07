@@ -1,0 +1,385 @@
+:root{
+    --oscuro: #0f0f0f;
+    --primario: #fbfbfb; 
+    --secundario:#af599e;
+    --alterno: rgba(175, 89, 158, 0.3);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: var(--primario);
+    font-size: 1.8rem;
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+}
+main{
+    max-width: 120rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+span{
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.newcolor {
+    background-color: rgba(175, 89, 158, 0.3)
+}
+
+.header {
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+    box-shadow: 0px 6px 11px 0px rgba(168,165,168,1);
+    position: fixed;    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 9rem;
+}
+
+
+.logo{
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    height: 9rem;
+    width: 9rem;
+}
+.navbar {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-right: 1.5rem;
+}
+
+.navbar u li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+
+.navbar-link {
+    padding: 1rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: var(--oscuro);
+}
+
+/*.navbar-link:hover {
+    background: var(--alterno);
+    transition: background-color 0.6s;
+    
+}*/
+
+
+/*style main -- foto*/
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto_main {
+    background-color: #fbfbfb;
+    padding: 0;
+    height: 40rem;
+    width: 40rem;
+    border-radius: 20rem;
+}
+
+/* style manin -- Sections*/
+
+.main {
+    padding: 0;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main p {
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin: 1rem 1rem;
+    line-height: 1.2;
+}
+.main h1 {
+    margin: 1rem 1rem;
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+.main2 {
+    background-color: var(--alterno);
+    padding: 0;
+    margin: 10rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.2rem;
+}
+
+.main2 p {
+    
+    font-size: 1.8rem;
+    text-align: justify;
+    padding: .5rem;
+    margin: 1rem 1rem;
+    line-height: 1.2;
+}
+
+
+.main2 h2 {
+    
+    margin: 1rem 1rem;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.boton {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.boton-link {
+    background-color:#af599e;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--primario);
+    font-weight: bold;
+}
+
+/* Style Iconos*/
+.container_icono {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_icono ul li {
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+.container_icono ul li a {
+    margin: 1rem 1rem;
+    padding: 0 .8rem;
+}
+ .icono-link {
+    height: 5rem;
+    width: 5rem;
+    margin: 0.5rem;
+ }
+
+
+/* style footer*/
+.finpag {
+    background-color: var(--secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primario);
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 9rem;
+}
+
+
+
+
+/* Style for desktop*/
+
+@media (min-width:1048px){
+      
+    .header {
+        background-color: #fbfbfb;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5rem;
+        box-shadow: 0px 6px 11px 0px rgba(168,165,168,1);
+        position: fixed;    
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 12rem;
+    }
+       
+    .logo{
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+        height: 12rem;
+        width: 12rem;
+    }
+    .navbar {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-right: 1.5rem;
+    }
+        
+    .contairner_principal {
+        margin: 0 auto;
+    }
+    .main {
+        margin-top: 15rem;
+        width: 80%;
+        height: 90%;
+        margin-left: 5rem;
+    }
+    .main h1 {
+        margin: 1rem 1rem;
+        text-align:start;
+        font-size: 48px;
+    }
+    .container_foto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container_section-boton{
+        display: flex;
+        flex-direction: column;
+        align-items: start;   
+    }
+
+    .boton {
+        margin-left: 6.5rem;
+    }
+
+    .foto {
+        margin-left: 3rem;
+    }
+
+    .main2 {
+       background-color: var(--alterno);
+       max-width: 50%;
+       margin: 15rem auto 2.5rem auto;
+       
+    }
+    .main2 h2 {
+    
+        margin: 1rem 1rem;
+        text-align: center;
+        font-size: 32px;
+    }
+    .foto_main {
+        background-color: #fbfbfb;
+        padding: 0;
+        height: 50rem;
+        width: 50rem;
+        border-radius: 30rem;
+    }
+    .icono-link {
+        height: 6.5rem;
+        width: 6.5rem;
+        margin: 0.5rem;
+     }
+}
+
+
+
+/* estilos para contactos */
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 20px;
+    
+}
+
+.construccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    margin: 20rem auto ;
+
+}
+
+.input-principal{
+    display: block;
+    margin: 0   auto;
+    padding: 12px 25px;
+    width: 95vw; 
+    margin-bottom: 10px;
+}
+
+
+.medios_contacto {
+    margin: 30px 0;
+    border: none;
+    padding: 0;
+}
+
+.horario_contacto {
+    margin-top: 30px;
+    border: none;
+    padding: 0;
+}
+
+.boton_enviar {
+    width: 55%;
+    margin-top: 30px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f3a305;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    transition: 1s all;
+    cursor: pointer ;
+
+}
+.boton_enviar:hover {
+    background-color: rgb(3, 159, 89);
+    transform: scale(1.1);
+}
+
+@media (min-width:1280px) {
+    .construccion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .boton_enviar {
+        margin: 20px 0; 
+        
+    }
+    .horario_contacto {
+        margin-bottom: 40px;
+    }
+    .input-principal{
+        width: 60vw;
+        margin-bottom: 10px;
+        
+    }
+ }
